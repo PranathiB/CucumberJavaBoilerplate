@@ -39,14 +39,14 @@ public class DriverHooks {
     }
 
     private void captureScreenShotOnFailure(Scenario scenario) throws IOException {
-//        if (scenario.isFailed()) {
-//            try {
-//                scenario.write("Current Page URL is " + driver.getCurrentUrl());
-//                File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-//                FileUtils.copyFile(scrFile, new File("reports/screenshots/" + System.currentTimeMillis() + ".png"));
-//            } catch (WebDriverException somePlatformsDontSupportScreenshots) {
-//                System.err.println(somePlatformsDontSupportScreenshots.getMessage());
-//            }
-//        }
+        if (scenario.isFailed()) {
+            try {
+                scenario.write("Current Page URL is " + driver.getCurrentUrl());
+                File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+                FileUtils.copyFile(scrFile, new File("reports/screenshots/" + System.currentTimeMillis() + ".png"));
+            } catch (WebDriverException somePlatformsDontSupportScreenshots) {
+                System.err.println(somePlatformsDontSupportScreenshots.getMessage());
+            }
+        }
     }
 }
