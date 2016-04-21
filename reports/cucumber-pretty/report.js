@@ -6,6 +6,10 @@ formatter.feature({
   "id": "cleartrip-login-functionality",
   "keyword": "Feature"
 });
+formatter.before({
+  "duration": 1514001642,
+  "status": "passed"
+});
 formatter.scenario({
   "line": 3,
   "name": "Logging in with invalid credentials should show an error",
@@ -29,16 +33,29 @@ formatter.step({
   "name": "I should see a error message",
   "keyword": "Then "
 });
-formatter.match({});
-formatter.result({
-  "status": "undefined"
+formatter.match({
+  "location": "ClearTripLoginSteps.iAmOnCleartripLoginPage()"
 });
-formatter.match({});
 formatter.result({
-  "status": "undefined"
+  "duration": 1194809647,
+  "status": "passed"
 });
-formatter.match({});
+formatter.match({
+  "location": "ClearTripLoginSteps.iEnterInvalidCredentials()"
+});
 formatter.result({
-  "status": "undefined"
+  "duration": 281800497,
+  "status": "passed"
+});
+formatter.match({
+  "location": "ClearTripLoginSteps.iShouldSeeAErrorMessage()"
+});
+formatter.result({
+  "duration": 3629705,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 2079428222,
+  "status": "passed"
 });
 });

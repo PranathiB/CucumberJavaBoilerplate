@@ -3,38 +3,69 @@
     "line": 1,
     "elements": [
       {
+        "before": [
+          {
+            "result": {
+              "duration": 1514001642,
+              "status": "passed"
+            },
+            "match": {
+              "location": "DriverHooks.openBrowser()"
+            }
+          }
+        ],
         "line": 3,
         "name": "Logging in with invalid credentials should show an error",
         "description": "",
         "id": "cleartrip-login-functionality;logging-in-with-invalid-credentials-should-show-an-error",
+        "after": [
+          {
+            "result": {
+              "duration": 2079428222,
+              "status": "passed"
+            },
+            "match": {
+              "location": "DriverHooks.afterTheScenario(Scenario)"
+            }
+          }
+        ],
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "status": "undefined"
+              "duration": 1194809647,
+              "status": "passed"
             },
             "line": 4,
             "name": "I am on cleartrip login page",
-            "match": {},
+            "match": {
+              "location": "ClearTripLoginSteps.iAmOnCleartripLoginPage()"
+            },
             "keyword": "Given "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 281800497,
+              "status": "passed"
             },
             "line": 5,
             "name": "I enter invalid credentials",
-            "match": {},
+            "match": {
+              "location": "ClearTripLoginSteps.iEnterInvalidCredentials()"
+            },
             "keyword": "When "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 3629705,
+              "status": "passed"
             },
             "line": 6,
             "name": "I should see a error message",
-            "match": {},
+            "match": {
+              "location": "ClearTripLoginSteps.iShouldSeeAErrorMessage()"
+            },
             "keyword": "Then "
           }
         ]
