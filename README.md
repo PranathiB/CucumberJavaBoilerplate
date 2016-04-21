@@ -10,7 +10,7 @@
 
         mvn compile && mvn test
 
-The generated test reports can be found in reports/
-Screenshots can be found in reports/screenshots
-Screenshots are captured only when there is a failure in scenario
+* The generated test reports can be found in reports/
+* Screenshots can be found in reports/screenshots
+* Screenshots are captured only when there is a failure in scenario
     
