@@ -34,8 +34,5 @@ public class ClearTripLoginSteps {
     @Then("^I should see a error message$")
     public void iShouldSeeAErrorMessage() throws Throwable {
         Assert.assertTrue(loginPage.hasErrors());
-        assertThat("",containsString(""));
-
-        // Write code here that turns the phrase above into concrete actions
     }
 }
