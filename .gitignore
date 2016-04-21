@@ -1,3 +1,5 @@
 .idea/*
 target/*
-cucumber-java-boilerplate.iml
+#cucumber-java-boilerplate.iml
+out/*
+reports/*

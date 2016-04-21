@@ -22,12 +22,11 @@ public class DriverHooks {
 
     @Before
     public void openBrowser() {
-        System.out.println("***********In Open browser");
+//        System.out.println("***********In Open browser");
+        //change the following path to point to the chromedriver
         System.setProperty("webdriver.chrome.driver","/Users/pranathb/Downloads/chromedriver");
         driver = new ChromeDriver();
-        System.out.println("***********after that browser"+driver);
         driver.manage().window().maximize();
-        System.out.println("What happened here??");
         wait = new WebDriverWait(driver, 10);
     }
 

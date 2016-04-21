@@ -1,80 +1,49 @@
 [
   {
-    "id": "cleartrip-login-functionality",
-    "description": "",
-    "name": "ClearTrip login functionality",
-    "keyword": "Feature",
     "line": 1,
     "elements": [
       {
-        "after": [
-          {
-            "result": {
-              "duration": 2077032000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "DriverHooks.afterTheScenario(Scenario)"
-            }
-          }
-        ],
-        "id": "cleartrip-login-functionality;logging-in-with-invalid-credentials-should-show-an-error",
-        "before": [
-          {
-            "result": {
-              "duration": 1644323000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "DriverHooks.openBrowser()"
-            }
-          }
-        ],
-        "description": "",
-        "name": "Logging in with invalid credentials should show an error",
-        "keyword": "Scenario",
         "line": 3,
+        "name": "Logging in with invalid credentials should show an error",
+        "description": "",
+        "id": "cleartrip-login-functionality;logging-in-with-invalid-credentials-should-show-an-error",
+        "type": "scenario",
+        "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 2374298000,
-              "status": "passed"
+              "status": "undefined"
             },
-            "name": "I am on cleartrip login page",
-            "keyword": "Given ",
             "line": 4,
-            "match": {
-              "location": "ClearTripLoginSteps.iAmOnCleartripLoginPage()"
-            }
+            "name": "I am on cleartrip login page",
+            "match": {},
+            "keyword": "Given "
           },
           {
             "result": {
-              "duration": 192459000,
-              "status": "passed"
+              "status": "undefined"
             },
-            "name": "I enter invalid credentials",
-            "keyword": "When ",
             "line": 5,
-            "match": {
-              "location": "ClearTripLoginSteps.iEnterInvalidCredentials()"
-            }
+            "name": "I enter invalid credentials",
+            "match": {},
+            "keyword": "When "
           },
           {
             "result": {
-              "duration": 5329000,
-              "status": "passed"
+              "status": "undefined"
             },
-            "name": "I should see a error message",
-            "keyword": "Then ",
             "line": 6,
-            "match": {
-              "location": "ClearTripLoginSteps.iShouldSeeAErrorMessage()"
-            }
+            "name": "I should see a error message",
+            "match": {},
+            "keyword": "Then "
           }
-        ],
-        "type": "scenario"
+        ]
       }
     ],
+    "name": "ClearTrip login functionality",
+    "description": "",
+    "id": "cleartrip-login-functionality",
+    "keyword": "Feature",
     "uri": "ClearTripLogin.feature"
   }
 ]

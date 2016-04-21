@@ -1,5 +1,3 @@
-
-
 import cucumber.api.CucumberOptions;
 import cucumber.api.junit.Cucumber;
 import org.junit.runner.RunWith;
@@ -12,7 +10,7 @@ import org.junit.runner.RunWith;
                 "html:reports/cucumber-pretty",
                 "json:reports/cucumber.json" },
 //        tags = {"@run"},
-        features = "test/features"  //refer to Feature file
+        features = "src/test/features"  //refer to Feature file
          )
 public class CucumberRunnerTest {
 }
