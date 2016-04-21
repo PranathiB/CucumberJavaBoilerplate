@@ -1,10 +1,11 @@
 # CucumberJavaBoilerplate
 
-This is a base project structure to start using Cucumber/Junit and Maven
-I have used example website as cleartrip.com
+####This is a base project structure to start using Cucumber/Junit and Maven
+######This project uses example website as cleartrip.com
 
-To run the tests:
-1. Clone the repo
-2. Update the chromedrive path in src/main/steps/DriverHooks.java file
-3. Run the following commands:
-    mvn compile && mvn test
+#####To run the tests:
+* Clone the repo
+* Update the chromedrive path in src/main/steps/DriverHooks.java file
+* Run the commands: 
+
+        mvn compile && mvn test
