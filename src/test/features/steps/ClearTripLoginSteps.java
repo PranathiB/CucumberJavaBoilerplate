@@ -1,4 +1,4 @@
-package steps;
+package features.steps;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
@@ -8,7 +8,6 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import pages.*;
 import static org.hamcrest.MatcherAssert.assertThat;
-import static org.hamcrest.core.StringContains.containsString;
 
 public class ClearTripLoginSteps {
     LoginPage loginPage;
@@ -29,10 +28,11 @@ public class ClearTripLoginSteps {
     @When("^I enter invalid credentials$")
     public void iEnterInvalidCredentials() throws Throwable {
         loginPage.fillDetails(UserLoginDetails.INVALID_USER_DETAILS);
+        loginPage.clickLogin();
     }
 
     @Then("^I should see a error message$")
     public void iShouldSeeAErrorMessage() throws Throwable {
-        Assert.assertTrue(loginPage.hasErrors());
+        loginPage.assertIsShowingLoginError();
     }
 }

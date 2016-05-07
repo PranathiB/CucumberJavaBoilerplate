@@ -5,7 +5,7 @@
 
 #####To run the tests:
 * Clone the repo
-* Update the chromedrive path in src/main/steps/DriverHooks.java file
+* Update the chromedrive path in src/test/features/steps/DriverHooks.java file
 * Run the commands: 
 
         mvn compile && mvn test

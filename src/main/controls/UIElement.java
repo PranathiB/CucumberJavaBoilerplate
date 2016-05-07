@@ -9,23 +9,21 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import static org.hamcrest.CoreMatchers.containsString;
 import static org.hamcrest.MatcherAssert.assertThat;
 
-//import static org.hamcrest.CoreMatchers.containsString;
-//import static org.hamcrest.MatcherAssert.assertThat;
-
 public class UIElement {
     private WebDriver driver;
     private String id;
+    private By locator;
     private WebDriverWait wait;
 
-    public UIElement(WebDriver driver, String id) {
+    public UIElement(WebDriver driver, By locator) {
         this.driver = driver;
-        this.id = id;
+        this.locator = locator;
         this.wait = new WebDriverWait(driver,10);
     }
 
     protected WebElement element(){
-        wait.until(ExpectedConditions.visibilityOfElementLocated(By.id(id)));
-        return driver.findElement(By.id(id));
+        wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
+        return driver.findElement(locator);
     }
 
     public void assertContains(String txt) {
@@ -34,5 +32,6 @@ public class UIElement {
 
     public void assertHasCSSClass(String cssClass) {
         String actualCSSClasses = element().getAttribute("class");
+        assertThat(actualCSSClasses,containsString(cssClass));
     }
 }
