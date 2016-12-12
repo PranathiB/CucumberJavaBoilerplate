@@ -7,7 +7,7 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebDriverException;
-import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.io.File;
@@ -20,10 +20,11 @@ public class DriverHooks {
 
     @Before
     public void openBrowser() {
-//        System.out.println("***********In Open browser");
-        //change the following path to point to the chromedriver
-        System.setProperty("webdriver.chrome.driver","/Users/pranathb/Downloads/chromedriver");
-        driver = new ChromeDriver();
+        //Uncomment the below if you wish to use ChromeDriver
+//        System.setProperty("webdriver.chrome.driver","/resources/chromedriver");
+        //change the following to use ChromeDiver()
+        System.setProperty("webdriver.gecko.driver","resources/geckodriver");
+        driver = new FirefoxDriver();
         driver.manage().window().maximize();
         wait = new WebDriverWait(driver, 10);
     }
