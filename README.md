@@ -1,6 +1,6 @@
 # CucumberJavaBoilerplate
 
-####This is a base project structure to start using Cucumber/Junit and Maven
+####This is a base project structure to start using Cucumber/Junit and Maven with Selenium 3.0.1
 ######This project uses example website as cleartrip.com
 
 #####To run the tests:
